@@ -168,7 +168,7 @@ h1{
 	'log e x_square x_cube'
 	'ten_degree_x e_degree_x x_degree_y x_degree_min-one'
 	'factorial_x square_root_x log10 log10'
-	'rand rand scope_l scope_r';
+	'rand rand acos asin';
 	grid-gap: 10px;
 	justify-content: center;
 }
@@ -176,7 +176,7 @@ h1{
 .btn.x_cube,
 .btn.ten_degree_x,
 .btn.e_degree_x,
-.btn.x_degree_y,
+.btn.cube_root_x,
 .btn.x_degree_min-one{
 	text-align-last: left;
 	padding-left: 17px;
@@ -191,6 +191,12 @@ h1{
 	top: -8px;
 	font-size: 18px;
 }
-
-
+.btn.acosh,
+.btn.asinh{
+	font-size: 20px;
+}
+.btn.cube_root_x .degree{
+	left: 30%;
+	top: -14px;
+}
 

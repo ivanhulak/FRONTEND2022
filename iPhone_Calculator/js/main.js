@@ -6,7 +6,9 @@ let finish = false;
 
 const digit = ['0','1','2','3','4','5','6','7','8','9','.'];
 const action = ['+','-','x','/'];
-const other_actions = ['sin', 'cos', 'tan', 'π', 'log', 'e', 'x2', 'x3', '10x', 'ex', 'x!', 'Random', '(' ,')'];
+const other_actions = ['sin', 'cos', 'asinh', 'acosh','tan', 'π', 'ln', 'e',
+							 'x2', 'x3', '10x', 'ex', 'x!', 'Random', '√x', '√x3' ,'x-1',
+							 'log10'];
 
 let out = document.querySelector('.calc__screen p');
 
@@ -132,6 +134,12 @@ document.querySelector('.buttons__more').onclick = (event) => {
 			case 'sin':
 				a = (Number.isInteger(Math.sin(a))) ? Math.sin(a) : Math.sin(a).toFixed(4);
 				break;
+			case 'acosh':
+				a = (Number.isInteger(Math.acosh(a))) ? Math.acosh(a) : Math.acosh(a).toFixed(4);
+				break;
+			case 'asinh':
+				a = (Number.isInteger(Math.asinh(a))) ? Math.asinh(a) : Math.asinh(a).toFixed(4);
+				break;
 			case 'tan':
 				a = (Number.isInteger(Math.tan(a))) ? Math.tan(a) : Math.tan(a).toFixed(4);
 				break;
@@ -141,9 +149,9 @@ document.querySelector('.buttons__more').onclick = (event) => {
 				} else res_pi = Math.PI * a;
 				a = (Number.isInteger(res_pi)) ? res_pi : res_pi.toFixed(6);
 				break;
-			case 'log':
-				let res_log = Math.log(a);
-				a = (Number.isInteger(res_log)) ? res_log : res_log.toFixed(6);
+			case 'ln':
+				a = Math.log(a);
+				a = (Number.isInteger(res_ln)) ? res_ln : res_ln.toFixed(6);
 				break;
 			case 'e':
 				if (a === ''){
@@ -173,6 +181,22 @@ document.querySelector('.buttons__more').onclick = (event) => {
 			case 'x!':
 				let factorial_x = factorialize(a);
 				a = (Number.isInteger(factorial_x)) ? factorial_x : factorial_x.toFixed(6);
+				break;
+			case '√x':
+				let square_root = Math.pow(a, 0.5);
+				a = (Number.isInteger(square_root)) ? square_root : square_root.toFixed(6);
+				break;
+			case '√x3':
+				let cube_root = Math.pow(a, 1/3);
+				a = (Number.isInteger(cube_root)) ? cube_root : cube_root.toFixed(6);
+				break;
+			case 'x-1':
+				let x_degree_min_one = Math.pow(a, -1);
+				a = (Number.isInteger(x_degree_min_one)) ? x_degree_min_one : x_degree_min_one.toFixed(6);
+				break;
+			case 'log10':
+				let log10 = Math.log10(a);
+				a = (Number.isInteger(log10)) ? log10 : log10.toFixed(6);
 				break;
 		};
 		finish = true;
