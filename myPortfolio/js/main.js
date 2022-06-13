@@ -1,7 +1,7 @@
 $(window).on('load', function(){
 
     $("#header").vide("./video/cover", {
-        bgImage: "url('./video/forrest.jpg')",
+        bgColor: "#222918",
     })
 
 });
