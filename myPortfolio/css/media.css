@@ -1,0 +1,114 @@
+@media (max-width: 1100px){
+    .footer {
+        padding: 40px 0px 60px;
+    }
+    .footer-row {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-item{
+        margin-bottom: 50px;
+        flex-basis: 0;
+    }
+    .author{
+        margin-bottom: 0px;
+    }
+    .socials-row{
+        justify-content: center;
+    }
+}
+@media (max-width: 992px){
+    .portfolio-card__title{
+        font-size: 22px;
+    }
+    .portfolio-card__subtitle{
+        font-size: 14px;
+    }
+}
+@media (max-width: 760px){
+    .header-title{
+        font-size: 42px;
+    }
+    .header-subtitle{
+        font-size: 14px;
+    }
+    .portfolio{
+        padding: 50px 0px 50px 0px;
+    }
+    .portfolio-row {
+        padding-top: 40px;
+        justify-content: center;
+    }
+    .portfolio-title {
+        font-size: 32px;
+    }
+    .portfolio-card {
+        width: 100%;
+    }
+    .author__name{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .author__text{
+        font-size: 14px;
+    }
+    .contacts__info {
+        font-size: 14px;
+    }
+    .contacts__button{
+        font-size: 14px;
+    }
+    .socials p{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .project__image{
+        margin-bottom: 30px;
+    }
+    /* Forest travel page*/
+    .project {
+        padding: 40px 0px 60px;
+    }
+    .project__content h1{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .project__image {
+        margin-bottom: 15px;
+    }
+    .project__info{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 630px){
+    .header-title{
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .header-subtitle{
+        max-width: 70%;
+    }
+    .portfolio-card img{
+        margin-bottom: 10px;
+    }
+    .portfolio-card__title{
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 420px){
+    .portfolio{
+        padding: 30px 0px 30px 0px;
+    }
+    .portfolio-row {
+        padding-top: 30px;
+    }
+    .portfolio-card{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .portfolio-card__title{
+        font-size: 18px;
+    }
+}
