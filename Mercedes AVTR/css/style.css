@@ -1,0 +1,280 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{background-color:transparent;padding:0;border:0;cursor:pointer;} 
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{color:inherit;text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+@font-face {
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Corporate-A-Bold.woff2') format('woff2'),
+         url('../fonts/Corporate-A-Bold.woff') format('woff');
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
+}
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+/*******************************   Header  ********************************/
+.header{
+    background: #070A1B;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header__logo{
+    margin-left: 115px;
+}
+.list {
+    display: flex;
+}
+.list__item + .list__item {
+    margin-left: 36.5px;
+}
+.list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background .8s;
+}
+.list__link:hover{
+    background: #C1A1D2;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-image: url('../images/header/main_img.png');
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+.header__content:before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/header/sign_mercedes.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+.title {
+    font-family: 'Corporate-A-Bold';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+}
+.title-descriptor {
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+}
+/*******************************   Concept  ********************************/
+.concept {
+    padding: 150px 0px 150px 0px;
+}
+.concept__inner{
+    max-width: 900px;
+    margin-left: auto;
+}
+.section-title {
+    font-family: 'Corporate-A-Bold';
+    color: #F402A2;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+.concept__text {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+.concept__image{
+    display: block;
+    max-width: 100%;
+}
+/*******************************   Premier  ********************************/
+.premier{
+    padding-bottom: 150px;
+}
+.premier__inner {
+    display: flex;
+    gap: 60px;
+}
+.premier__column {
+    padding: 0px 15px 0px 5px;
+}
+.premier__text {
+    margin-bottom: 21px;
+}
+.premier__img {
+    margin-bottom: 23px;
+}
+.premier__btn {
+    display: block;
+    width: 100%;
+    font-family: 'Corporate-A-Bold';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #F402A2;
+    border: 1px solid #F402A2;
+    padding: 14px;
+    transition: all .7s;
+}
+.premier__btn:hover{
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
+}
+/*******************************   Video  ********************************/
+.video {
+    padding-bottom: 150px;
+}
+.video__img{
+    margin-bottom: 25px;
+}
+.video__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Corporate-A-Bold';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: #F402A2;
+    border: 1px solid #F402A2;
+    padding: 14px;
+    transition: all .7s;
+}
+.video__btn span{
+    padding: 2px 0px 0px 10px;
+}
+.video__btn path{
+    transition: all .7s;
+}
+.video__btn:hover{
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
+}
+.video__btn:hover path{
+    fill: #53A1CB;
+}
+
+/*******************************   Design  ********************************/
+.design__interior {
+    display: grid;
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 14px 44px;
+    margin-bottom: 100px;
+}
+.design__interior > img{
+    grid-column: 2/-1;
+    width: 100%;
+    
+}
+.design__cell-one {
+    grid-row: 1/3;
+}
+.design__cell-text {
+    margin-bottom: 15px;
+}
+.design__cell-two {
+    grid-row-end: -1;
+    display: flex;
+    align-items: flex-end;
+}
+.design__cell-three {
+    grid-row-end: -1;
+    grid-column-end: -1;
+    display: flex;
+    align-items: flex-end;
+}
+/*******************************   Design-slider  ********************************/
+.design-slider__item {
+    margin: 0 30px 25px;
+}
+.arrow{
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    bottom: 0px;
+    left: 50%;
+}
+.arrow-left{
+    transform: translateX(-100%);
+}
+.arrow-right{
+    transform: translateX(100%);
+}
+/*******************************   Design Text-Box  ********************************/
+.design__box {
+    max-width: 590px;
+    padding: 0px 10px;
+    display: flex;
+    gap: 60px;
+    margin: 150px auto;
+}
+.design__box-column {
+    flex-basis: 255px;
+}
+.design__box-text {
+    margin-bottom: 20px;
+}
+.design__img{
+    width: 100%;
+    object-fit: cover;
+}
+/*******************************   Footer  ********************************/
+.footer{
+    background: #070A1B;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
