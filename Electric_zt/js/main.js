@@ -9,7 +9,7 @@ $(function(){
     });
 
     $('.header__burger').click(function(event){
-        $('.header__burger,.header__menu,.header__logo,.header__socials').toggleClass('active');
+        $('.header__burger,.header__menu-body,.header__logo,.header__socials').toggleClass('active');
         $('body').toggleClass('lock');
     });
 })
