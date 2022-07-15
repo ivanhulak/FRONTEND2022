@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Suschi Shop</title>
+</head>
+<style> 
+    a{
+        display: block;
+        float: left;
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+        padding: 5px;
+        border-style: solid;
+        border-color: #000;
+        border-width: 1px;
+    } 
+    p{
+        float: left;
+    }
+    li {
+        margin-bottom: 10px;
+        text-decoration: none;
+        list-style-type: none;
+        padding-right: 0px;
+    }
+    ul {
+        padding: 0px;
+    }
+</style>
+<body>
+    <div style="margin-bottom: 40px;">
+        <h1>Suchi Shop Delivery</h1>
+        <a href="/add_roll">Додати рол</a>
+        <a href="/add_user">Додати користувача</a>
+        <a href="/del_roll">Видалити рол</a>
+        <a href="/del_user">Видалити користувача</a>
+        <a href="/get_sale">Отримати знижку</a>
+        <br>
+    </div>
+    <div>
+        <h3>Форма для додавання користувача</h3>
+        <form action="/add_user" method="post">
+            <ul> 
+                <li>
+                    <label for="id">id:</label>
+                    <input type="text" id="id" name="id">
+                </li>
+                <li>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name">
+                </li> 
+                <li>
+                    <label for="surname">Прізвище:</label>
+                    <input type="text" id="surname" name="surname">
+                </li>
+                <li class="button">
+                    <button type="submit">Додати користувача</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

@@ -11,7 +11,6 @@ window.addEventListener('click', function(event){
         // Находим конпку с товаром внутри которой кликнули
         const card = event.target.closest('.card');
 
-        
         // Собираем данные с этого обьекта и записываем их в productInfo
         const productInfo = {
             id: card.dataset.id,
@@ -28,7 +27,7 @@ window.addEventListener('click', function(event){
         const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
 
 
-        // Если товара есть в корзине
+        // Если товар есть в корзине
         if (itemInCart){
 
             const counterElement = itemInCart.querySelector('[data-counter]');
@@ -74,8 +73,6 @@ window.addEventListener('click', function(event){
         // После нажатия кнопки "Добавить в корзину, количество сбрасывается на 1"
         // Сбрасываем количество товара в карточке после выбора
         card.querySelector('[data-counter]').innerText = '1';
-
-
 
         // Отображаем статус КОРЗИНЫ пустая / полная
         toggleCartStatus();

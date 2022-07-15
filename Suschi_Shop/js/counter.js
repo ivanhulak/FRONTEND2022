@@ -8,7 +8,6 @@ window.addEventListener('click', function(event){
         // Нахожу счётчик
         const counterWrapper = event.target.closest('.counter-wrapper');
         counter = counterWrapper.querySelector('[data-counter]');
-        
     }
 
 
