@@ -113,7 +113,6 @@
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        
     }
     .header__item{
         margin: 0;
@@ -275,7 +274,7 @@
     }
     .about__body {
         justify-content: space-around;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
     .about__info {
         max-width: 380px;
@@ -391,7 +390,7 @@
         max-height: 200px;
     }
     .works__slider-text {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 110%;
         margin-bottom: 10px;
@@ -445,32 +444,64 @@
     .header__btn{
         font-size: 12px;
     }
+    .services__title {
+        padding: 50px 0px 40px;
+    }
+    .services__row {
+        max-width: 260px;
+    }
+    .card__inner {
+        height: 340px;
+    }
+    .card__icon {
+        margin-bottom: 15px;
+        max-width: 60px;
+    }
     .about__image {
-        max-width: 220px;
+        display: none;
     }
     .about__info {
-        max-width: 210px;
-        font-size: 12px;
-        line-height: 120%;
-        padding: 10px 15px;
-        border-radius: 25px;
+        position: relative;
+        max-width: 100%;
+        font-size: 16px;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 0px 20px;
+    }
+    .about__info:after {
+        content: '';
+        background-image: url('./../img/about/electric.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        position: absolute;
+        z-index: 5;
+        width: 52px;
+        height: 70px;
+        right: -25px;
+        bottom: -30px;
+    }
+    .works__slider {
+        padding: 0px 0px;
+    }
+    .works__body {
+        padding: 0px 10px 15px;
+        position: relative;
+        z-index: 2;
     }
     .works__slider-image img {
-        max-height: 160px;
+        max-height: 200px;
     }
     .works__slider-text {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 500;
+        margin-bottom: 15px;
     }
     .works__slider .slick-arrow {
-        width: 25px;
-        top: 30%;
+        width: 0;
     }
     .works__slider .slick-dots li button {
         width: 25px;
-    }
-    .works__body{
-        padding-bottom: 15px;
     }
     .works__title {
         font-size: 30px;
@@ -534,39 +565,46 @@
         max-width: 250px;
     }
     .card__inner {
-        height: 300px;
-    }
-    .card__text {
-        font-size: 16px;
-        margin-bottom: 5px;
+        height: 285px;
     }
     .card__icon {
         margin-bottom: 15px;
-        max-width: 60px;
+        max-width: 45px;
+    }
+    .card__text {
+        font-size: 14px;
+        margin-bottom: 5px;
     }
     .about__body{
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
     .about__title {
         padding: 40px 0px 15px 0px;
     }
     .about__info {
-        max-width: 160px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 110%;
-        padding: 10px 10px;
+        padding: 10px 20px 10px 15px;
         border-radius: 15px;
     }
+    .about__info:after {
+        width: 45px;
+        height: 60px;
+        right: -25px;
+        bottom: -15px;
+    }
     .works__slider-image img {
-        max-height: 110px;
+        max-height: 160px;
     }
     .works__slider-text {
-        font-size: 10px;
-        font-weight: 400;
+        font-size: 14px;
     }
     .works__title {
         font-size: 26px;
         padding: 30px 0px 15px 0px;
+    }
+    .works__slider .slick-dots li button {
+        width: 20px;
     }
     .footer__title {
         font-size: 20px;
