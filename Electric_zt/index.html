@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -86,14 +87,43 @@
                     </div>
                     <button class="header__btn">ЗАКАЗАТЬ ЭЛЕКТРОМОНТАЖНЫЕ УСЛУГИ</button>
                 </div>
+
+                <div class="form">
+                    <div class="close"></div>
+                    <form action="#" class="form__body" id="form">
+                        <h1 class="form__title">Заказать электромонтажные услуги</h1>
+                        <div class="form__item">
+                            <label for="formName" class="form__label">ФИО*:</label>
+                            <input id="formName" class="form__input _req" type="text" name="name">
+                        </div>
+                        <div class="form__item">
+                            <label for="formTel" class="form__label">Телефон (+38)*:</label>
+                            <input id="formTel" class="form__input _req" type="tel" name="telephone">
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" class="form__input _req _email" type="text" name="email">
+                        </div>
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Сообщение:</label>
+                            <textarea id="formMessage" class="form__input" type="text" name="message"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input checked id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label">
+                                    <span>
+                                        Я даю своё согласие на оброботку персональных данных в соответствии с <a href="#">Условиями</a>*
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
-
-
-
-
-
     <section class="walpers">
         <section id="services" class="services">
             <div class="container">
@@ -182,7 +212,6 @@
                 </div>
             </div>
         </section>
-
         <section id="about" class="about">
             <div class="container">
                 <div class="about__title page-title">Обо мне</div>
@@ -278,6 +307,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 </body>
 
